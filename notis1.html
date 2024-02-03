@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notis Sfakianakis</title>
+  <link rel="stylesheet" href="notis.css">
+  <script src="notis.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="grid">
+      <header>
+        <ul>
+          <div class="head1">
+            <i class="fa-regular fa-copyright fa-xl" style="color: #ffffff;"></i>
+            <p style="margin-left: 5px; color: #ffffff;">All Rights Reserved</p>
+          </div>
+          <div class="head2">
+            <li><a href="https://open.spotify.com/"><i class="fa-brands fa-spotify fa-xl" style="color: #0eaa28;"></i></a></li>
+            <li><a href="https://www.youtube.com/"><i class="fa-brands fa-youtube fa-xl" style="color: #ff0000;"></i></a></li>
+            <li><a href="https://www.facebook.com/?locale=el_GR"><i class="fa-brands fa-facebook fa-xl" style="color: #003899;"></i></a></li>
+          </div>
+        </ul>
+      </header>
+      <nav>
+        <div class="logo">
+            <img src="notis.jpg">
+        </div>
+        <ul class="menu">
+            <li onclick="toggle('biografia')"><a href="#">Βιογραφία</a></li>
+            <li onclick="toggle('photo')"><a href="#">Φωτογραφίες</a></li>
+            <li onclick="toggle('disko')"><a href="#">Δισκογραφία</a></li>
+            <li onclick="toggle('synde')"><a href="#">Σύνδεσμοι</a></li>
+            <li onclick="toggle('diax')"><a href="#">Διαχείριση</a></li>
+          </ul>
+      </nav>
+      <aside class="sidebar">
+        <div class="bio">
+          <ul id="biografia">
+            <li><a onclick="toggle('b1')" href="#">Καταγωγή</a></li>
+            <li><a onclick="toggle('b2')" href="#">Πρώτα Βήματα</a></li>
+            <li><a onclick="toggle('b3')" href="#">Δεκαετία 90</a></li>
+          </ul>
+        </div>
+        <div class="photographies">
+            <ul id="photo">
+              <li><a onclick="toggle('p1')" href="#">Νότης</a></li>
+              <li><a onclick="toggle('p2')" href="#">Άλμπουμ</a></li>
+              <li><a onclick="toggle('p3')" href="#">Συναυλίες</a></li>
+            </ul>
+          </div>
+          <div class="diskographia">
+            <ul id="disko">
+              <li><a href="#">Άνοιξις</a></li>
+              <li><a href="#">Ανα...γέννησις</a></li>
+              <li><a href="#">Μνήμες</a></li>
+            </ul>
+          </div>
+          <div class="syndesmoi">
+            <ul id="synde">
+              <li><a href="#">Βίντεο</a></li>
+              <li><a href="#">Συναυλίες</a></li>
+              <li><a href="#">Διαδικτυακοί Σύνδεσμοι</a></li>
+            </ul>
+          </div>
+          <div class="diaxeirish">
+            <ul id="diax">
+              <li><a  onclick="toggle('s1')" href="#">Σύνδεση</a></li>
+              <li><a href="#">Αποσύνδεση</a></li>
+              <li><a href="#">Διαχείριση Έργων</a></li>
+              <li><a href="#">Διαχείριση Συνδέσμων</a></li>
+            </ul>
+          </div>
+        </aside> 
+        <main>
+            <!--biografia id=1-->
+        <div class="text" id="b1" style="background-color: rgb(40, 167, 167);">
+            <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; margin-top: 20px; color: rgb(0, 80, 120);">Καταγωγή</h1>
+              <p>&emsp;Ο Νότης Σφακιανάκης γεννήθηκε στο Ηράκλειο της Κρήτης από πατέρα Κρητικό (Κωνσταντίνος)
+                        και μητέρα Μικρασιάτισσα (Δέσποινα). Σε ηλικία 7 ετών, λόγω του
+                        χωρισμού των γονιών του, εγκαταστάθηκε στην Κω όπου ζούσαν οι
+                        γονείς της μητέρας του, ενώ πέρασε κάποια μικρά χρονικά διαστήματα
+                        στη Γερμανία όπου είχε εγκατασταθεί η μητέρα του μετά τον δεύτερο γάμο της<br><br></p>
+            </div>
+            <!--biografia id=2-->
+            <div class="text" id="b2" style="background-color: rgb(40, 167, 167);">
+              <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; margin-top: 20px; color: rgb(0, 80, 120);">Πρώτα Βήματα</h1>
+              <p>&emsp;Το 1985 ο Σφακιανάκης ξεκίνησε την επαγγελματική του ενασχόληση με το τραγούδι
+                στην Κω ως αρχηγός ξενόγλωσσου συγκροτήματος και έπειτα στην Κρήτη ως λαϊκός
+                τραγουδιστής. Το 1988 πήγε στην Αθήνα, όπου κατάφερε να συνεργαστεί με τραγουδιστές
+                όπως η Πόλυ Πάνου, ο Σταμάτης Κόκοτας, ο Γιώργος Σαλαμπάσης, ο Κώστας Μοναχός κλπ.
+                Το καλοκαίρι του 1990 μετέβη στη Θεσσαλονίκη όπου συνεργάστηκε με την
+                Ελένη Δήμου και προσέλκυσε το ενδιαφέρον μουσικών παραγωγών.
+                Το πρώτο τραγούδι που ηχογράφησε είναι το "Νοσταλγείς τα περασμένα",
+                στο δίσκο ΕΝΑ του Σάκη Καβατζικιώτη που κυκλοφόρησε το 1990.<br><br></p>
+            </div>
+            <!--biografia id=3-->
+          <div class="text" id="b3" style="background-color: rgb(40, 167, 167);">
+            <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; margin-top: 20px; color: rgb(0, 80, 120);">Δεκαετία '90</h1>
+            <p>&emsp;Τον Ιούνιο του 1991 κυκλοφόρησε ο πρώτος προσωπικός δίσκος του Σφακιανάκη με τίτλο "Πρώτη Φορά".
+              Περιλάμβανε 11 τραγούδια σε στίχους και μουσική δημιουργών όπως οι Τάσος Βουγιατζής και Πάνος Φαλάρας.
+              Το 1992 μετακόμισε από την Sony στην EMI και την ίδια χρονιά κυκλοφόρησε το δεύτερο προσωπικό
+              του δίσκο με τίτλο «Είσαι ένα πιστόλι», ο οποίος αποτελείτο από 13 τραγούδια μεταξύ των
+              οποίων τα «Είσαι ένα πιστόλι», «Ώπα ώπα», «Δεύτερα χέρια», «Ένα με τη νύχτα» κ.ά. με τα δύο
+              πρώτα να σημειώνουν σημαντική επιτυχία. Το 1993 ακολούθησε ο δίσκος «Με το Ν και με το Σ»
+              που περιλάμβανε 13 κομμάτια σε στίχους και μουσική των Πυξ Λαξ, Αλέκου Χρυσοβέργη, Σπύρου Γιατρά κ.ά.
+              Από τον συγκεκριμένο δίσκο ξεχώρισαν τραγούδια όπως το «Λίγο λίγο» και το «Μα εσύ με καις».
+              Ο δίσκος έγινε πλατινένιος<br><br></p>
+          </div>
+          <!--photo id=1-->
+          <div class="photo" id="p1">
+            <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; margin-top: 20px; color: rgb(36, 92, 120);">Φωτογραφίες Νότης</h1>
+            <img src="notis1.jpg">
+            <img src="notis2.jpg">
+            <img src="notis3.jpg">
+            <img src="notis4.jpg">
+          </div>
+           <!--photo id=2-->
+           <div class="photo" id="p2">
+            <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; margin-top: 20px; color: rgb(36, 92, 120);">Άλμπουμ</h1>
+              <img src="album1.jpg">
+              <img src="album2.jpg">
+              <img src="album3.jpg">
+          </div>
+          <!--photo id=3-->
+          <div class="photo" id="p3">
+            <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-align: center; margin-top: 20px; color: rgb(36, 92, 120);">Συναυλίες</h1>
+              <img src="kentro1.jpg">
+              <img src="kentro2.jpg">
+              <img src="kentro3.jpg">
+          </div>
+          <div class="syn1" id="s1">
+            <form action="/login" method="post">
+              <label for="username">Username:</label>
+              <input type="text" id="username" name="username" required>
+          
+              <label for="password">Password:</label>
+              <input type="password" id="password" name="password" required>
+          
+              <button type="submit">Login</button>
+            </form>
+          </div>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="aboutus" style="width: 35%;">
+              <h1>Νότης Σφακιανάκης</h1>
+              <p style="color: white;">Ο Νότης Σφακιανάκης,Το 1985 ο Σφακιανάκης ξεκίνησε την επαγγελματική του ενασχόληση με το τραγούδι
+                στην Κω ως αρχηγός ξενόγλωσσου συγκροτήματος και έπειτα στην Κρήτη ως λαϊκός
+                τραγουδιστής. Το 1988 πήγε στην Αθήνα, όπου κατάφερε να συνεργαστεί με τραγουδιστές
+                όπως η Πόλυ Πάνου, ο Σταμάτης Κόκοτας, ο Γιώργος Σαλαμπάσης, ο Κώστας Μοναχός κλπ.
+              </p>
+          </div>
+          <div class="Links" style="position: relative; width: 25%;">
+            <h1>Μενού</h1>
+            <ul style="list-style: none;">
+                <li><a onclick="togglesubmenu('biografia')" href="/biographia">Βιογραφία</a></li>
+                <li><a onclick="togglesubmenu('photo')" href="/photos">Φωτογραφίες</a></li>
+                <li><a onclick="togglesubmenu('disko')" href="/diskographia">Δισκογραφία</a></li>
+                <li><a onclick="togglesubmenu('synde')" href="/syndesmoi">Σύνδεσμοι</a></li>
+                <li><a onclick="togglesubmenu('diax')" href="/diaxeirish">Διαχείριση</a></li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h1>Επικοινωνία</h1>
+            <ul class="info" style="position: relative;">
+                <li>
+                    <span><i class="far fa-envelope" aria-hidden="true"></i></span>
+                    <span>Email: Notisfanpage@gmail.com</span>
+                </li>
+                <li>
+                    <span><i class="fab fa-facebook-square" aria-hidden="true"></i></span>
+                    <span>Facebook: Notisfanpage</span>
+                </li>
+                <li>
+                    <span><i class="fas fa-phone" aria-hidden="true"></i></span>
+                    <span>Τηλέφωνο: +30697-233-2455, 22310-00000</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </footer>
+  </div>
+</body>
+</html>
